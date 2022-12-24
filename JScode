@@ -1,0 +1,24 @@
+//Rules button
+function Show(id)
+{
+  if (document.getElementById(id).style.display == 'none') {
+       document.getElementById(id).style.display = 'block';
+  }
+  else {
+       document.getElementById(id).style.display = 'none';
+  }
+};
+
+//Submit Button
+function Verify() {
+  let userRef = "Anjaneyulu@gmail.com";
+  let passRef = "12RobotoLove";
+  
+  let user =  document.getElementById("username").value;
+  let pass = document.getElementById("password").value;
+  if (user == userRef || pass == passRef) {
+  alert("Connected")
+  } else {
+  alert("It's seem you make a mistake...")
+  }
+};
